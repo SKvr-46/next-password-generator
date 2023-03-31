@@ -11,8 +11,8 @@ export const Generator = (props: GeneratorPropsType) => {
     const { size } = props
     const [charactersType, setCharactersType] = useState(0) //4パターンのうちどれか
     const [characters, setCharacters] = useState("") //パスワードの文字候補列
-    const [password, setPassword] = useState("") //パスワードの文字候補
-    const [count, setCount] = useState(0) 
+    const [password, setPassword] = useState("")
+    const [count, setCount] = useState(0) //レンダリングトリガーのカウント
 
     // 大文字、小文字、数字、記号を含む文字列
     const characters_u_l_s_n = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?@#$%&"
