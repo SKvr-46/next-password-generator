@@ -1,0 +1,10 @@
+.container {
+    margin-top: 3em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        color: crimson;
+    }
+}

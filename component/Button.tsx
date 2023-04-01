@@ -1,15 +1,13 @@
 import styles from "styles/button.module.scss"
-import { useState } from "react"
 
 type ButtonPropsType = {    
     passwordType: string
-    charactersType: number
     setCharactersType: React.Dispatch<React.SetStateAction<number>>
     setCount: React.Dispatch<React.SetStateAction<number>>
 }
 
 export const Button = (props : ButtonPropsType) => {
-    const {passwordType, charactersType, setCharactersType, setCount} = props
+    const {passwordType, setCharactersType, setCount} = props
 
     const handlePasswordType = (passwordType: string) => {
         if(passwordType == "大文字＆小文字＆記号＆数字"){
@@ -33,6 +31,7 @@ export const Button = (props : ButtonPropsType) => {
         <div>
             <button
             onClick={() => handlePasswordType(passwordType)}
+            className={styles.btn}
             >{passwordType}</button>
         </div>
     )

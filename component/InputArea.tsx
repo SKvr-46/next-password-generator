@@ -22,7 +22,7 @@ export const InputArea = (props: InputAreaPropsType) => {
     }
     
     return(
-        <div>
+        <div className={styles.container}>
             <label>PASSWORD SIZE</label>
             <input type="text" value={inputValue} onChange={handleInputChange} />
             <p>{message}</p>

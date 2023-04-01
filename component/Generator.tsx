@@ -80,33 +80,29 @@ export const Generator = (props: GeneratorPropsType) => {
 
 
     return (
-        <div>
+        <div className={styles.container}>
             <Button
             passwordType={"大文字＆小文字＆記号＆数字"}
             setCharactersType={setCharactersType}
-            charactersType={charactersType}
             setCount={setCount}
             />
             <Button
             passwordType={"大文字＆小文字＆数字"}
             setCharactersType={setCharactersType}
-            charactersType={charactersType}
             setCount={setCount}
             />
             <Button
             passwordType={"大文字＆小文字＆記号"}
             setCharactersType={setCharactersType}
-            charactersType={charactersType}
             setCount={setCount}
             />
             <Button
             passwordType={"大文字＆小文字"}
             setCharactersType={setCharactersType}
-            charactersType={charactersType}
             setCount={setCount}
             />
             <div>
-                <p>生成されたパスワード：{password}</p>
+                <p className={styles.password}>生成されたパスワード：{password}</p>
             </div>
         </div>
 
