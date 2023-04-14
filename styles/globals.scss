@@ -6,3 +6,17 @@
     background: rgb(103, 152, 225);
 
 }
+
+a {
+    background: inherit;
+    color: white;
+    text-decoration: none;
+    &:hover {
+        color: aquamarine;
+    }
+}
+
+address {
+    background: inherit;
+    color: white;
+}

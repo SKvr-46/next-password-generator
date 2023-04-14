@@ -23,8 +23,13 @@ export const InputArea = (props: InputAreaPropsType) => {
     
     return(
         <div className={styles.container}>
-            <label>PASSWORD SIZE</label>
-            <input type="text" value={inputValue} onChange={handleInputChange} />
+            <label>PASSWORD SIZE
+            <input 
+            type="text" 
+            value={inputValue} 
+            className={styles.input}
+            onChange={handleInputChange} />
+            </label>
             <p>{message}</p>
         </div>
     )

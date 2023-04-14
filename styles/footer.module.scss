@@ -1,0 +1,17 @@
+.footer {
+    width: 100%;
+    height: 10em;
+    background: #2f363e;
+    padding-top: 2em;
+
+    & .flexcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 92%;
+        margin: 0 auto;
+        gap: 1em;
+        background: inherit;
+    }
+}
