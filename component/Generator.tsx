@@ -81,6 +81,7 @@ export const Generator = (props: GeneratorPropsType) => {
 
     return (
         <div className={styles.container}>
+            <div className={styles.gridContainer}>
             <Button
             passwordType={"大文字＆小文字＆記号＆数字"}
             setCharactersType={setCharactersType}
@@ -101,6 +102,7 @@ export const Generator = (props: GeneratorPropsType) => {
             setCharactersType={setCharactersType}
             setCount={setCount}
             />
+            </div>
             <div>
                 <p className={styles.password}>生成されたパスワード：{password}</p>
             </div>
