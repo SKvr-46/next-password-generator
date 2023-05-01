@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+    place-items: center;
+    position: relative;
+    background: rgba(128, 128, 128, 0.3);
+    width: 100%;
+    height: 100%;
+    margin: 1em;
+    padding: 3em;
+    border-radius: 5em;
+
+    & .state {
+        background: transparent;
+        margin: 1em 0;
+    }
+
+    & details {
+        background: transparent;
+        display: grid;
+        place-items: center;
+        position: relative;
+        width: 100%;
+
+        & summary {
+            text-align: center;
+            background: transparent;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        & p {
+            text-align: center;
+            background: transparent;
+            font-weight: bold;
+            word-break: break-all;
+            width: 100%;
+        }
+    }
+}

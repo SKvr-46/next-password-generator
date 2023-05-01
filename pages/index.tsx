@@ -2,6 +2,7 @@ import Layout from "@/component/Layout"
 import { Generator } from "@/component/Generator"
 import { useState } from "react"
 import { InputArea } from "@/component/InputArea"
+import { Accordion } from "@/component/Accordion"
 import { Footer } from "@/component/Footer"
 import styles from "styles/index.module.scss"
 
@@ -16,6 +17,7 @@ const Home = () => {
       setInputValue={setInputValue}
       />
       <Generator size={inputValue}/>
+      <Accordion/>
       </Layout>
       <Footer/>
     </div>
